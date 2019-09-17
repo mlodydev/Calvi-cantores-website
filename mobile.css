@@ -1,6 +1,24 @@
+    /*
+    GLOBAL
+    */
 *{
     box-sizing: border-box;
 }
+
+h2{
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+    /*
+    GLOBAL
+    END
+    */
+
+    /*
+    Home and nav
+    */
+
 #navWrap{
     display: flex;
     opacity: 0.8;
@@ -16,11 +34,14 @@ ul li{
     text-align: center;
     display: none;
 }
+    /*
+    Home and nav
+    END
+    */
 
-h2{
-    font-size: 3rem;
-    margin: 20px 0;
-}
+    /*
+    Concerts Section
+    */
 
 #concertsDiv{
     flex-direction: column;
@@ -43,3 +64,8 @@ h2{
     max-height: 40vh;
     max-width: 80vw;
 }
+
+    /*
+    Concerts Section
+    END
+    */

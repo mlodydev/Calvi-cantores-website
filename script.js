@@ -5,27 +5,29 @@ class NavBar{
         this.otherLiElements = Array.from(navElemnts);
         this.wrpButton = this.otherLiElements.shift();
         this.screenResolution = screenResolution;
-        console.log("NavBar CONSTRUCTOR: ", this.wrpButton, " - is type of: ", typeof(this.wrpButton) );
+        this.otherLiElLength = this.otherLiElements.length;
+        this.wrpButton.onclick = function(){
+            navBar.wrapNavBar();
+        }
     }
 
     showNavBar(){
-        let otherLen = this.otherLiElements.length;
-        for(var i = 0; i < otherLen; i++){
+        for(var i = 0; i < this.otherLiElLength; i++){
             this.otherLiElements[i].style.display = "flex";
             this.otherLiElements[i].style.justifyContent = "center";
         }
-        if(window.screen.availWidth<this.screenResolution){
-            this.otherLiElements[otherLen - 1].style.display = "none";
+        if(window.innerWidth<this.screenResolution){
+            this.otherLiElements[this.otherLiElLength - 1].style.display = "none";
         }
     }
     hideNavBar(){
-        for(var i = 0; i < this.otherLiElements.length; i++){
+        for(var i = 0; i < this.otherLiElLength; i++){
             this.otherLiElements[i].style.display = "none";
         }
     }
 
     wrapNavBar(){
-        if( window.screen.availWidth <= this.screenResolution ){
+        if( window.innerWidth <= this.screenResolution ){
             if( this.wrpButton.innerText=="Ukryj" ){
                 this.wrpButton.innerText = "Menu";
                 this.hideNavBar();
@@ -48,20 +50,21 @@ var screenResolution = 900;
 
     // OBJECTS
 var navBar = new NavBar(ulElements, screenResolution);
-navBar.wrpButton.onclick = function(){
-    navBar.wrapNavBar();
-};
-
     // OBJECTS END
 
     // WINDOW OPERATIONS
-document.body.onresize = function(){
-    if(window.screen.availWidth>screenResolution){
+window.onresize = function(){
+    console.log(this.screenResolution);
+    console.log(window.innerWidth);
+    debugger;
+    if(window.innerWidth>screenResolution){
         navBar.showNavBar();
+        debugger;
     }
     else{
         navBar.wrpButton.innerText="Menu";
         navBar.hideNavBar();
+        debugger;
     }
 };
     // WINDOW OPERATIONS END
