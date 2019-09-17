@@ -9,6 +9,13 @@ class NavBar{
         this.wrpButton.onclick = function(){
             navBar.wrapNavBar();
         }
+        for(var i = 0; i < this.otherLiElLength; i++){
+            console.log(this.otherLiElements[i]);       
+            this.otherLiElements[i].onclick = function(){
+                navBar.wrapNavBar();
+                
+            }
+        }
     }
 
     showNavBar(){
@@ -16,9 +23,10 @@ class NavBar{
             this.otherLiElements[i].style.display = "flex";
             this.otherLiElements[i].style.justifyContent = "center";
         }
-        if(window.innerWidth<this.screenResolution){
+        //if for hiding old logo(logo as last element of ul list)
+        /*if(window.innerWidth<this.screenResolution){
             this.otherLiElements[this.otherLiElLength - 1].style.display = "none";
-        }
+        }*/
     }
     hideNavBar(){
         for(var i = 0; i < this.otherLiElLength; i++){
@@ -44,7 +52,7 @@ class NavBar{
 
     // GLOBAL VARIABLES
 var ulElements = document.getElementById("navbar").getElementsByTagName("li");
-
+var listOfSingers = document.getElementsByClassName("singer");
 var screenResolution = 900;
     // GLOBAL VARIABLES END
 
@@ -56,15 +64,12 @@ var navBar = new NavBar(ulElements, screenResolution);
 window.onresize = function(){
     console.log(this.screenResolution);
     console.log(window.innerWidth);
-    debugger;
     if(window.innerWidth>screenResolution){
         navBar.showNavBar();
-        debugger;
     }
     else{
         navBar.wrpButton.innerText="Menu";
         navBar.hideNavBar();
-        debugger;
     }
 };
     // WINDOW OPERATIONS END

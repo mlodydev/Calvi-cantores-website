@@ -19,6 +19,10 @@ h2{
     Home and nav
     */
 
+nav{
+    position: fixed;
+}
+
 #navWrap{
     display: flex;
     opacity: 0.8;
@@ -33,6 +37,10 @@ ul{
 ul li{
     text-align: center;
     display: none;
+    height: 50px;
+}
+li a{
+    width: 100%;
 }
     /*
     Home and nav
@@ -69,3 +77,49 @@ ul li{
     Concerts Section
     END
     */
+
+    /*
+    About Section
+    */
+
+#aboutDiv{
+    flex-direction: column;
+}
+#aboutDiv p{
+    margin: 20px;
+    max-width: 100%;
+}
+
+    /*
+    Singers
+    */
+
+#singers{
+
+}
+.singer{
+    min-width: 180px;
+    min-height: 180px;
+}
+.singerInfo{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.4;
+    justify-content: center;
+    width: 100%;
+    color: whitesmoke;
+}
+    /*
+    Singers
+    END
+    */
+
+    /*
+    About Section
+    END
+    */
+
+    
