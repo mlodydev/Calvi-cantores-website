@@ -1,0 +1,133 @@
+body, html, section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    /*
+    Home and Nav
+    */
+
+}
+#home{
+    background-image: url("img/front.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#navWrap{
+    display: none;
+}
+ul{
+    display: flex;
+    width: 100%; 
+    margin:0;
+    padding: 0;
+    list-style:none;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li{ 
+    padding: 2vh;
+    font-size: 1.2rem;
+    background-color: #444;
+    opacity: 0.8;
+    height: 100%;
+}
+ul li:last-child{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 0;
+}
+ul li a{
+    color: #fff; 
+    text-decoration:none;
+}
+ul li a img{
+    height: 45px;
+}
+ul li:hover{
+    background-color: #444;
+    opacity: 1.0;
+}
+
+    /*
+    Home and Nav
+    END
+    */
+
+    /*
+    Concerts Section
+    */
+h2{
+    text-align: center;
+    font-size: 4rem;
+    flex-direction: column;
+}
+#concerts{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#concertsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#concerts .concert {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1vw;
+    margin: 1vw;
+    border-style: solid;
+    border-color: #b3d9ff;
+    border-width: 2px 0px 0px 0px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#concerts .concert img{
+    max-height: 40vh;
+    width: 100%;
+    
+}
+#concerts .concert .concertTitle{
+    font-size: 1.3rem;
+    border-style: dashed;
+    border-color: #b3d9ff;
+    border-width: 0px 0px 1px 0px;
+
+}
+#concerts .concert .concertDetails{
+    font-size: 1.2rem;
+}
+#concerts .concert .concertPlace{
+    border-style: dashed;
+    border-color: #b3d9ff;
+    border-width: 0px 0px 1px 0px;
+}
+#concerts .concert .concertDate{
+    border-style: dashed;
+    border-color: #b3d9ff;
+    border-width: 0px 0px 1px 0px;
+}
+
+    /*
+    Concerts Section
+    END
+    */
