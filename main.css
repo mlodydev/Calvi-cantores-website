@@ -98,7 +98,7 @@ ul li:hover{
 }
 
 #concerts .concert {
-    width: 30vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,8 +177,8 @@ ul li:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 20vw;
-    min-height: 20vw;
+    min-width: 222px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,12 +192,13 @@ ul li:hover{
     opacity: 0.7;
     height: 100%;
     justify-content: center;
+    font-size: 1.3rem;
 }
 .singer:hover > .singerInfo{
     display: flex;
     flex-direction: column;
 }
-#sado{
+#tomek{
     background-image: url("img/tSadownik.jpg");
 }
 #kolo{
@@ -206,7 +207,18 @@ ul li:hover{
 #wojtek{
     background-image: url("img/wGorka.jpg");
 }
-    
+#slawek{
+    background-image: url("img/sRzepa.jpg");
+}
+#mario{
+    background-image: url("img/mSek.jpg");
+}
+#bartek{
+    background-image: url("img/bBartosiewicz.jpg");
+}
+#michal{
+    background-image: url("img/mWojtaszek.jpg");
+}
 
     /*
     Singers
