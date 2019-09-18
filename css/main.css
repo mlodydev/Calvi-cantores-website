@@ -26,7 +26,7 @@ h2{
     */
 
 #home{
-    background-image: url("img/front.jpg");
+    background-image: url("/CalviCantores/img/front.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,25 +199,25 @@ ul li:hover{
     flex-direction: column;
 }
 #tomek{
-    background-image: url("img/tSadownik.jpg");
+    background-image: url("/CalviCantores/img/tSadownik.jpg");
 }
 #kolo{
-    background-image: url("img/tKolodziej.jpg");
+    background-image: url("/CalviCantores/img/tKolodziej.jpg");
 }
 #wojtek{
-    background-image: url("img/wGorka.jpg");
+    background-image: url("/CalviCantores/img/wGorka.jpg");
 }
 #slawek{
-    background-image: url("img/sRzepa.jpg");
+    background-image: url("/CalviCantores/img/sRzepa.jpg");
 }
 #mario{
-    background-image: url("img/mSek.jpg");
+    background-image: url("/CalviCantores/img/mSek.jpg");
 }
 #bartek{
-    background-image: url("img/bBartosiewicz.jpg");
+    background-image: url("/CalviCantores/img/bBartosiewicz.jpg");
 }
 #michal{
-    background-image: url("img/mWojtaszek.jpg");
+    background-image: url("/CalviCantores/img/mWojtaszek.jpg");
 }
 
     /*
